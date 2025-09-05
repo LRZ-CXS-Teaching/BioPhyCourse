@@ -22,3 +22,7 @@ Three-day course on computational biophysics: lectures, hands-on data, Jupyter n
 ### Day 3
 1. [Lammps](Day3/01_Lammps)
 2. [Ovitio](Day3/02_Ovitio)
+
+## License
+- Course content (slides, notes, data): [CC BY 4.0](LICENSE-CCBY)
+- Code and Jupyter Notebooks: [MIT](LICENSE)
