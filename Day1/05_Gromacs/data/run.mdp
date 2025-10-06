@@ -1,0 +1,49 @@
+;define              =  -DPOSRES  
+constraints         =  all-bonds
+constraint-algorithm     = Lincs
+lincs-order              = 6
+integrator          =  md
+dt                  =  0.002	; ps !
+comm_mode           =  Linear
+nsteps              =  2500000000;000000   ; total 10000  ps.
+
+nstxout             =  100000
+nstvout             =  100000 
+nstfout             =  0
+
+nstxout-compressed  = 5000
+
+nstlog              =  1000
+nstenergy           =  1000
+nstlist             =  5 
+rlist               =  1
+vdwtype             = Cut-off
+cutoff-scheme       = Verlet
+rvdw                = 1
+coulombtype         = PME
+fourierspacing      = 0.12
+pme_order           = 4
+rcoulomb            = 1
+
+
+; Berendsen temperature coupling is on in two groups
+Tcoupl              =     V-rescale
+tau_t               =      0.5           	         
+tc-grps		    =    System    
+ref_t               =      300                     
+; Pressure coupling is not on
+Pcoupl              =      C-rescale 
+pcoupltype = isotropic
+tau_p               =  5
+compressibility     =   4.5e-5 
+ref_p               =  1.0  
+; Generate velocites is on at 300 K.
+gen_vel             =  yes
+gen_temp            =  300.0
+gen_seed            =  -1
+
+free_energy              = no; yes
+init-lambda              = 0.0
+delta-lambda             = 0.0
+
+
