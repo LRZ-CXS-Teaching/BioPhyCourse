@@ -1,0 +1,316 @@
+
+  **** **** ******  **  PROGRAM STARTED AT               2025-10-22 19:14:35.176
+ ***** ** ***  *** **   PROGRAM STARTED ON                       badwlrz-cl18014
+ **    ****   ******    PROGRAM STARTED BY                               di97gef
+ ***** **    ** ** **   PROGRAM PROCESS ID                                191082
+  **** **  *******  **  PROGRAM STARTED IN /home/di97gef/Documents/lrz/work/biop
+                                           hy_course/jupyternbs_mol_modeling_ai/
+                                           final_notebooks/CP2K-DFT
+
+ CP2K| version string:                                       CP2K version 2023.1
+ CP2K| source code revision number:                                  git:b888bd8
+ CP2K| cp2kflags: omp libint fftw3 libxc elpa parallel scalapack spglib         
+ CP2K| is freely available from                            https://www.cp2k.org/
+ CP2K| Program compiled at                          Tue Jan 10 19:52:03 UTC 2023
+ CP2K| Program compiled on                                            x86-ubc-01
+ CP2K| Program compiled for                                Linux-x86_64-gfortran
+ CP2K| Data directory path                                       /usr/share/cp2k
+ CP2K| Input file name                                         Solvate-H3PO4.inp
+
+ GLOBAL| Force Environment number                                              1
+ GLOBAL| Basis set file name                                        BASIS_MOLOPT
+ GLOBAL| Potential file name                                           POTENTIAL
+ GLOBAL| MM Potential file name                                     MM_POTENTIAL
+ GLOBAL| Coordinate file name                                      __STD_INPUT__
+ GLOBAL| Method name                                                        CP2K
+ GLOBAL| Project name                                              Solvate-H3PO4
+ GLOBAL| Run type                                                        GEO_OPT
+ GLOBAL| FFT library                                                       FFTW3
+ GLOBAL| Diagonalization library                                       ScaLAPACK
+ GLOBAL| DGEMM library                                                      BLAS
+ GLOBAL| Orthonormality check for eigenvectors                          DISABLED
+ GLOBAL| Matrix multiplication library                                 ScaLAPACK
+ GLOBAL| All-to-all communication in single precision                          F
+ GLOBAL| FFTs using library dependent lengths                                  F
+ GLOBAL| Grid backend                                                       AUTO
+ GLOBAL| Global print level                                                  LOW
+ GLOBAL| MPI I/O enabled                                                       T
+ GLOBAL| Total number of message passing processes                             1
+ GLOBAL| Number of threads for this process                                   14
+ GLOBAL| This output is from process                                           0
+ GLOBAL| Stack size for threads created by OpenMP (OMP_STACKSIZE)        default
+ GLOBAL| CPU model name                           Intel(R) Core(TM) Ultra 7 155U
+
+ MEMORY| system memory details [Kb]
+ MEMORY|                        rank 0           min           max       average
+ MEMORY| MemTotal             15867484      15867484      15867484      15867484
+ MEMORY| MemFree                317860        317860        317860        317860
+ MEMORY| Buffers                 60880         60880         60880         60880
+ MEMORY| Cached                5767048       5767048       5767048       5767048
+ MEMORY| Slab                   715736        715736        715736        715736
+ MEMORY| SReclaimable           430012        430012        430012        430012
+ MEMORY| MemLikelyFree         6575800       6575800       6575800       6575800
+
+
+ GENERATE|  Preliminary Number of Bonds generated:                             0
+ GENERATE|  Achieved consistency in connectivity generation.
+
+ *******************************************************************************
+ *******************************************************************************
+ **                                                                           **
+ **     #####                         ##              ##                      **
+ **    ##   ##            ##          ##              ##                      **
+ **   ##     ##                       ##            ######                    **
+ **   ##     ##  ##   ##  ##   #####  ##  ##   ####   ##    #####    #####    **
+ **   ##     ##  ##   ##  ##  ##      ## ##   ##      ##   ##   ##  ##   ##   **
+ **   ##  ## ##  ##   ##  ##  ##      ####     ###    ##   ######   ######    **
+ **    ##  ###   ##   ##  ##  ##      ## ##      ##   ##   ##       ##        **
+ **     #######   #####   ##   #####  ##  ##  ####    ##    #####   ##        **
+ **           ##                                                    ##        **
+ **                                                                           **
+ **                                                ... make the atoms dance   **
+ **                                                                           **
+ **            Copyright (C) by CP2K developers group (2000-2022)             **
+ **                      J. Chem. Phys. 152, 194103 (2020)                    **
+ **                                                                           **
+ *******************************************************************************
+
+
+ TOTAL NUMBERS AND MAXIMUM NUMBERS
+
+  Total number of            - Atomic kinds:                                   3
+                             - Atoms:                                         23
+                             - Shell sets:                                    23
+                             - Shells:                                        33
+                             - Primitive Cartesian functions:                160
+                             - Cartesian basis functions:                     53
+                             - Spherical basis functions:                     53
+
+  Maximum angular momentum of- Orbital basis functions:                        1
+                             - Local part of the GTH pseudopotential:          2
+                             - Non-local part of the GTH pseudopotential:      2
+
+
+ SCF PARAMETERS         Density guess:                                   RESTART
+                        --------------------------------------------------------
+                        max_scf:                                              20
+                        max_scf_history:                                       0
+                        max_diis:                                              4
+                        --------------------------------------------------------
+                        eps_scf:                                        1.00E-08
+                        eps_scf_history:                                0.00E+00
+                        eps_diis:                                       1.00E-01
+                        eps_eigval:                                     1.00E-05
+                        --------------------------------------------------------
+                        level_shift [a.u.]:                             0.000000
+                        --------------------------------------------------------
+                        Mixing method:                            BROYDEN_MIXING
+                                                charge density mixing in g-space
+                        --------------------------------------------------------
+                        No outer SCF
+
+ Number of electrons:                                                         72
+ Number of occupied orbitals:                                                 36
+ Number of molecular orbitals:                                                36
+
+ Number of orbital functions:                                                 53
+ Number of independent orbital functions:                                     53
+
+ Extrapolation method: initial_guess
+
+ *** WARNING in qs_initial_guess.F:309 :: User requested to restart the    ***
+ *** wavefunction from the file named: Solvate-H3PO4-RESTART.wfn. This     ***
+ *** file does not exist. Please check the existence of the file or change ***
+ *** properly the value of the keyword WFN_RESTART_FILE_NAME. Calculation  ***
+ *** continues using ATOMIC GUESS.                                         ***
+
+
+
+ SCF WAVEFUNCTION OPTIMIZATION
+
+  Step     Update method      Time    Convergence         Total energy    Change
+  ------------------------------------------------------------------------------
+     1 NoMix/Diag. 0.50E-01    0.2     2.34210890      -140.6782955928 -1.41E+02
+     2 Broy./Diag. 0.50E-01    0.0     0.05222598      -133.5637705955  7.11E+00
+     3 Broy./Diag. 0.50E-01    0.0     2.56760023      -157.7210833923 -2.42E+01
+     4 Broy./Diag. 0.50E-01    0.7     0.14971608      -160.7624385636 -3.04E+00
+     5 Broy./Diag. 0.50E-01    0.3     0.02083692      -160.4085530599  3.54E-01
+     6 Broy./Diag. 0.50E-01    0.2     2.42336311      -163.8978864921 -3.49E+00
+     7 Broy./Diag. 0.50E-01    0.2     0.12671721      -163.7393232082  1.59E-01
+     8 Broy./Diag. 0.50E-01    1.6     0.00673391      -163.7933659962 -5.40E-02
+     9 Broy./Diag. 0.50E-01    0.4     2.31164048      -165.2454763104 -1.45E+00
+    10 Broy./Diag. 0.50E-01    0.7     1.77208993      -165.9773999074 -7.32E-01
+    11 Broy./Diag. 0.50E-01    0.8     0.01276636      -164.0932947608  1.88E+00
+    12 Broy./Diag. 0.50E-01    0.8     0.03834940      -164.0265263109  6.68E-02
+    13 Broy./Diag. 0.50E-01    0.1     1.76604095      -164.1957033283 -1.69E-01
+    14 Broy./Diag. 0.50E-01    0.1     0.06179480      -166.1603009687 -1.96E+00
+    15 Broy./Diag. 0.50E-01    0.1     0.83202761      -166.7215536999 -5.61E-01
+    16 Broy./Diag. 0.50E-01    0.1     1.76333510      -166.3012163307  4.20E-01
+    17 Broy./Diag. 0.50E-01    0.3     0.02432655      -166.2680761529  3.31E-02
+    18 Broy./Diag. 0.50E-01    0.5     1.38606139      -166.1333417466  1.35E-01
+    19 Broy./Diag. 0.50E-01    0.2     0.01193116      -165.7046604868  4.29E-01
+    20 Broy./Diag. 0.50E-01    0.2     0.00494910      -165.6922225652  1.24E-02
+
+  Leaving inner SCF loop after reaching    20 steps.
+
+
+  Electronic density on regular grids:        -73.5597264038       -1.5597264038
+  Core density on regular grids:               69.6692735730       -2.3307264270
+  Total charge density on r-space grids:       -3.8904528309
+  Total charge density g-space grids:          -3.8904528309
+
+  Overlap energy of the core charge distribution:               0.00000044509516
+  Self energy of the core charge distribution:               -408.47288516314535
+  Core Hamiltonian energy:                                    121.32782365655372
+  Hartree energy:                                             161.85806887357407
+  Exchange-correlation energy:                                -40.40272928700307
+  Dispersion energy:                                           -0.00250109031835
+
+  Total energy:                                              -165.69222256524381
+
+ *** WARNING in qs_scf.F:601 :: SCF run NOT converged ***
+
+
+ ENERGY| Total FORCE_EVAL ( QS ) energy [a.u.]:             -163.744110059231588
+
+ STRESS| Analytical stress tensor [GPa]
+ STRESS|                        x                   y                   z
+ STRESS|      x       -5.57317300090E+01  -6.34310816026E+00  -6.36131527870E+00
+ STRESS|      y       -6.34310816026E+00   6.10286624962E+01  -1.36146943160E+01
+ STRESS|      z       -6.36131527870E+00  -1.36146943160E+01   1.36804717339E+01
+ STRESS| 1/3 Trace                                             6.32580140701E+00
+ STRESS| Determinant                                          -4.03188030691E+04
+
+ STRESS| Eigenvectors and eigenvalues of the analytical stress tensor [GPa]
+ STRESS|                        1                   2                   3
+ STRESS| Eigenvalues  -5.68035235206E+01   1.09480586075E+01   6.48328691341E+01
+ STRESS|      x           0.992623329023     -0.115282405072     -0.037535233595
+ STRESS|      y           0.065241758346      0.246962599375      0.966826244719
+ STRESS|      z           0.102188255921      0.962143150259     -0.252662064349
+
+ Number of electrons:                                                         72
+ Number of occupied orbitals:                                                 36
+ Number of molecular orbitals:                                                36
+
+ Number of orbital functions:                                                 53
+ Number of independent orbital functions:                                     53
+
+ Extrapolation method: ASPC
+
+
+ SCF WAVEFUNCTION OPTIMIZATION
+
+  Step     Update method      Time    Convergence         Total energy    Change
+  ------------------------------------------------------------------------------
+     1 Broy./Diag. 0.50E-01    0.5     2.74071942      -239.4170420053 -2.39E+02
+     2 Broy./Diag. 0.50E-01    0.0     0.05320713      -240.7991997835 -1.38E+00
+     3 Broy./Diag. 0.50E-01    0.0     2.83090347      -241.0684196320 -2.69E-01
+     4 Broy./Diag. 0.50E-01    0.8     2.12025420      -246.1653918929 -5.10E+00
+     5 Broy./Diag. 0.50E-01    1.6     0.01260301      -244.9456300032  1.22E+00
+     6 Broy./Diag. 0.50E-01    0.4     2.09947158      -245.6789340462 -7.33E-01
+     7 Broy./Diag. 0.50E-01    0.2     1.78812599      -246.5938185832 -9.15E-01
+     8 Broy./Diag. 0.50E-01    0.2     1.78846759      -248.0125404754 -1.42E+00
+     9 Broy./Diag. 0.50E-01    0.2     0.00596496      -246.6578902269  1.35E+00
+    10 Broy./Diag. 0.50E-01    0.2     1.32540660      -246.6740135645 -1.61E-02
+    11 Broy./Diag. 0.50E-01    0.1     1.32709471      -246.9871139485 -3.13E-01
+    12 Broy./Diag. 0.50E-01    0.3     0.01292903      -246.7808995410  2.06E-01
+    13 Broy./Diag. 0.50E-01    0.1     0.51434238      -246.3756805512  4.05E-01
+    14 Broy./Diag. 0.50E-01    0.2     0.05733851      -246.2662218815  1.09E-01
+    15 Broy./Diag. 0.50E-01    0.2     0.26292520      -246.5910428228 -3.25E-01
+    16 Broy./Diag. 0.50E-01    0.1     1.39348161      -246.7058384658 -1.15E-01
+    17 Broy./Diag. 0.50E-01    0.1     0.08574410      -246.7602876559 -5.44E-02
+    18 Broy./Diag. 0.50E-01    0.4     0.00350344      -246.8147034547 -5.44E-02
+    19 Broy./Diag. 0.50E-01    1.0     1.08669749      -246.8323823819 -1.77E-02
+    20 Broy./Diag. 0.50E-01    0.2     1.41137748      -246.6718427848  1.61E-01
+
+  Leaving inner SCF loop after reaching    20 steps.
+
+
+  Electronic density on regular grids:        -73.6290582188       -1.6290582188
+  Core density on regular grids:               59.9547892206      -12.0452107794
+  Total charge density on r-space grids:      -13.6742689983
+  Total charge density g-space grids:         -13.6742689983
+
+  Overlap energy of the core charge distribution:               0.00000132973807
+  Self energy of the core charge distribution:               -408.47288516314535
+  Core Hamiltonian energy:                                    116.33204712950676
+  Hartree energy:                                              85.90270055720555
+  Exchange-correlation energy:                                -40.43122419204710
+  Dispersion energy:                                           -0.00248244604373
+
+  Total energy:                                              -246.67184278478578
+
+ *** WARNING in qs_scf.F:601 :: SCF run NOT converged ***
+
+
+ ENERGY| Total FORCE_EVAL ( QS ) energy [a.u.]:             -243.913728281900774
+
+ STRESS| Analytical stress tensor [GPa]
+ STRESS|                        x                   y                   z
+ STRESS|      x        2.91001254969E+01   1.32866971997E+01   1.35805722466E+01
+ STRESS|      y        1.32866971997E+01   4.70610807675E+01   2.15768338000E+01
+ STRESS|      z        1.35805722466E+01   2.15768338000E+01   2.52725353213E+01
+ STRESS| 1/3 Trace                                             3.38112471952E+01
+ STRESS| Determinant                                           1.57080709869E+04
+
+ STRESS| Eigenvectors and eigenvalues of the analytical stress tensor [GPa]
+ STRESS|                        1                   2                   3
+ STRESS| Eigenvalues   1.02410621133E+01   2.22469504045E+01   6.89457290678E+01
+ STRESS|      x          -0.353150162680      0.834547146163      0.422866436870
+ STRESS|      y          -0.374876688457     -0.540344275923      0.753322993097
+ STRESS|      z           0.857177012671      0.107513368050      0.503674939460
+
+ Number of electrons:                                                         72
+ Number of occupied orbitals:                                                 36
+ Number of molecular orbitals:                                                36
+
+ Number of orbital functions:                                                 53
+ Number of independent orbital functions:                                     53
+
+ Extrapolation method: ASPC
+
+
+ SCF WAVEFUNCTION OPTIMIZATION
+
+  Step     Update method      Time    Convergence         Total energy    Change
+  ------------------------------------------------------------------------------
+     1 Broy./Diag. 0.50E-01    0.2     2.26705033      -265.4845323870 -2.65E+02
+     2 Broy./Diag. 0.50E-01    0.6     0.28017038      -267.1684891296 -1.68E+00
+     3 Broy./Diag. 0.50E-01    0.5     1.81868605      -268.0869266224 -9.18E-01
+     4 Broy./Diag. 0.50E-01    0.1     1.43393988      -270.3788906015 -2.29E+00
+     5 Broy./Diag. 0.50E-01    0.1     0.01765365      -269.4001702515  9.79E-01
+     6 Broy./Diag. 0.50E-01    0.1     1.81534511      -271.0850839841 -1.68E+00
+     7 Broy./Diag. 0.50E-01    0.2     0.13556587      -272.4835114324 -1.40E+00
+     8 Broy./Diag. 0.50E-01    0.2     1.81129097      -272.4430968432  4.04E-02
+     9 Broy./Diag. 0.50E-01    0.4     0.01432859      -272.5071530597 -6.41E-02
+    10 Broy./Diag. 0.50E-01    0.1     0.14471360      -272.4907571884  1.64E-02
+    11 Broy./Diag. 0.50E-01    0.4     1.78272440      -272.4415938163  4.92E-02
+    12 Broy./Diag. 0.50E-01    0.1     0.03275840      -271.5870733524  8.55E-01
+    13 Broy./Diag. 0.50E-01    1.1     0.04249261      -271.6516615418 -6.46E-02
+    14 Broy./Diag. 0.50E-01    1.6     1.79285944      -271.9220444471 -2.70E-01
+    15 Broy./Diag. 0.50E-01    0.1     0.01044244      -271.0916286124  8.30E-01
+    16 Broy./Diag. 0.50E-01    0.2     0.03622391      -271.1423015520 -5.07E-02
+    17 Broy./Diag. 0.50E-01    0.1     1.63341647      -271.3824692333 -2.40E-01
+    18 Broy./Diag. 0.50E-01    0.5     1.45518071      -272.5391166185 -1.16E+00
+    19 Broy./Diag. 0.50E-01    0.2     0.00257562      -274.2557069449 -1.72E+00
+    20 Broy./Diag. 0.50E-01    0.1     1.45509021      -274.1804444566  7.53E-02
+
+  Leaving inner SCF loop after reaching    20 steps.
+
+
+  Electronic density on regular grids:        -73.2784956004       -1.2784956004
+  Core density on regular grids:               53.1968240681      -18.8031759319
+  Total charge density on r-space grids:      -20.0816715322
+  Total charge density g-space grids:         -20.0816715322
+
+  Overlap energy of the core charge distribution:               0.00000264646007
+  Self energy of the core charge distribution:               -408.47288516314535
+  Core Hamiltonian energy:                                    110.95904049899990
+  Hartree energy:                                              62.38034898614169
+  Exchange-correlation energy:                                -39.04448956168612
+  Dispersion energy:                                           -0.00246186332346
+
+  Total energy:                                              -274.18044445655323
+
+ *** WARNING in qs_scf.F:601 :: SCF run NOT converged ***
+
