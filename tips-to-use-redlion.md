@@ -12,7 +12,7 @@
 
 	Once registration is successful, one can login to Redlion via below options:
 
-### 1. ssh into Redlion 
+### 2.1. ssh into Redlion 
 
 	``` bash
 	ssh USERNAME@138.246.237.46
@@ -24,22 +24,23 @@
 	sinfo 
 	```
 
-### 2. Desktop and jupyterlab environments on Redlion 
+### 2.2. Desktop and jupyterlab environments on Redlion 
 
 	1. Open https://vm-138-246-237-46.cloud.mwn.de:8443/
 	2. Enter username and password 
-	3. Click on "Remote Desktop Container" or "Jupyter Notebook"
+	3. To use remote desktop: Click on "Remote Desktop Container" > Add sufficient number of cores, RAM and Total time > Click Launch
+	4. To use jupyternotebook: Click on "Jupyter Notebook" > Select Custom environment: /biophy, Add sufficient number of cores, RAM and Total time > Click Launch
 
 ## 3. Cluster Nodes Specifications
 
-### 1. CPU Nodes
+### 3.1. CPU Nodes
 
 | Partition  | VCPUS | RAM    | Total |
 |------------|-------|--------|-------|
 | node       | 80    | 990 GB | 4     |
 | node-small | 8     | 99 GB  | 4     |
 
-### 2. GPU Nodes
+### 3.2. GPU Nodes
 
 | Partition   | TensorCores | CUDACores   | GPU Memory |  GPU                  | Total |
 |-------------|-------------|-------------|------------|-----------------------|-------|
@@ -47,7 +48,7 @@
 
 ## 4. Slurm on Redlion
 
-### 1. Using Modules 
+### 4.1. Using Modules 
 
 Scientific softwares are made available on Redlion via two sources. One is EESSI (European Environment for Scientific Software Installations) and another is custom softwares installed using spack. 
 
@@ -75,7 +76,7 @@ module list
 module show MODULE_NAME
 ```
 
-### 2. Using Slurm on CPU/GPU
+### 4.2. Using Slurm on CPU/GPU
 
 Sample slurm scripts to run jobs on cpu/gpu
 
@@ -122,7 +123,7 @@ module load cp2k/2025.1-gcc-11.5.0-bkgiadz
 srun cp2k.psmp -i H2O-32.inp > cp2k.out 2>&1
 ```
 
-### 3. Interactive runs 
+### 4.3. Interactive runs 
 
 ``` bash
 # on cpus
@@ -135,17 +136,17 @@ nvidia-smi
 srun --partition=gpu-node --gres=gpu:1 --ntasks=1  --time=00:30:00 --pty bash
 ```
 
-## 5. OOD on Redlion 
+## 5. Remote Desktop on Redlion 
 
 For visualization use desktop environment at: https://vm-138-246-237-46.cloud.mwn.de:8443/ 
 
-Click on "Remote Desktop Container". Select 8 or 16 cores and RAM 32GB. Start the desktop. 
+Click on "Remote Desktop Container". Select 4, 8 or 16 cores and RAM 32GB. Start the desktop. 
 
 Once desktop is ready, click terminal and follow corresponding instructions below to use visualization softwares Ovito, Vesta, Pymol and vmd. 
 
-The course data is available at /course_data
+The course data is available at /course_data:
 
-#### 1. Ovito
+### 5.1. Ovito
 
 Ovito is installed at /custom_software_rocky/additional/ovito-basic-3.14.0-x86_64/bin/ovito
 
@@ -156,7 +157,7 @@ ovito
 /custom_software_rocky/additional/ovito-basic-3.14.0-x86_64/bin/ovito
 ```
 
-### 2. Vesta 
+### 5.2. Vesta 
 
 ``` bash
 # load vesta module 
@@ -165,7 +166,7 @@ module load vesta
 VESTA
 ```
 
-### 3. Pymol 
+### 5.3. Pymol 
 
 ``` bash
 # load pymol
@@ -174,7 +175,7 @@ module load py-pymol
 pymol 
 ```
 
-### 4. VMD
+### 5.4. VMD
 
 ``` bash
 # load VMD
@@ -190,4 +191,12 @@ To use Jupyterlab on Redlion, login to : https://vm-138-246-237-46.cloud.mwn.de:
 Once the Launch settings window is ready, please select the following:
 
 Python distribution: miniforge3/25.9.1
-custom environment: /custom_software_rocky/miniforge3/envs/biophy
+
+custom environment: /biophys
+
+Select 4, 8 or 16 cores and RAM 32GB. Launch. 
+	
+## 7. Backup your data (only required data)
+
+Create a 
+Backup your data to folder /backups/USERNAME. Please backup only required data.
