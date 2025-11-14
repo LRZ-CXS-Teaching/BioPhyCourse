@@ -11,6 +11,6 @@
 
 export OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK
 
-activate_miniforge3
+activate_biophy
 
 gmx mdrun -s relax.tpr -c relax.pdb -ntomp 8 -pin on
