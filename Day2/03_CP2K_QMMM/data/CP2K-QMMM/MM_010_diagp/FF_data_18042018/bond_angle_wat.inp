@@ -1,0 +1,26 @@
+      &CHARGE
+        ATOM HT
+        CHARGE 0.41
+      &END CHARGE
+
+      &CHARGE
+        ATOM OT
+        CHARGE -0.82
+      &END CHARGE
+
+      &BOND
+      	ATOMS OT HT
+      	KIND HARMONIC
+      	K [kcalmol*angstrom^-2] 554.1349*2
+      	R0 [angstrom] 1.0
+      &END BOND
+
+      &BEND
+      	ATOMS HT OT HT
+      	KIND HARMONIC
+      	K [kcalmol*rad^-2] 45.7696*2
+      	THETA0 [deg] 109.47
+      &END BEND
+
+
+      
