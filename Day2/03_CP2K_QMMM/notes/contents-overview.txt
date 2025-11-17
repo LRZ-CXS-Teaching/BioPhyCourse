@@ -1,0 +1,21 @@
+├── data
+│   ├── 01-Intro-ASE # Here you will find main script 
+│   │   ├── finished # Here you will find corresponding outputfiles
+│   │   │   └── images
+│   │   └── images
+│   ├── 02-CP2K-DFT-ASE   
+│   │   ├── 01-CP2K-intro # Here you will find main script              
+│   │   │   └── finished	# Here you will find corresponding outputfiles
+│   │   └── 02-CP2K-ASE
+│   │       ├── ase-cp2k-opt-md-python-script # Here you will find main script              
+│   │       │   ├── finished									# Here you will find corresponding outputfiles
+│   │       │   └── images
+│   │       └── images
+│   └── 03-CP2K-QMMM
+│       ├── MM_010_diagp # Only an example, no script to run 
+│       │   ├── FF_data_18042018
+│       │   └── QM_data
+│       ├── QMMM_MQAE     # Here you will find main script              
+│       │   └── finished	# Here you will find corresponding outputfiles
+├── notes
+├── presentations # Here you will find presentations

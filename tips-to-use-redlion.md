@@ -179,6 +179,7 @@ pymol
 
 ``` bash
 # load VMD
+module load ImageMagick/7.1.1-34-GCCcore-13.2.0
 module load vmd
 # open vmd
 vmd 
