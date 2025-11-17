@@ -1,0 +1,204 @@
+--2025-11-17 00:36:42--  https://github.com/m3g/packmol/archive/refs/tags/v21.0.1.tar.gz
+Resolving github.com (github.com)... 140.82.121.3
+Connecting to github.com (github.com)|140.82.121.3|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/m3g/packmol/tar.gz/refs/tags/v21.0.1 [following]
+--2025-11-17 00:36:42--  https://codeload.github.com/m3g/packmol/tar.gz/refs/tags/v21.0.1
+Resolving codeload.github.com (codeload.github.com)... 140.82.121.9
+Connecting to codeload.github.com (codeload.github.com)|140.82.121.9|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-gzip]
+Saving to: ‘v21.0.1.tar.gz’
+
+     0K .......... .......... .......... .......... .......... 2.58M
+    50K .......... .......... .......... .......... .......... 5.20M
+   100K .......... .......... .......... .......... .......... 57.2M
+   150K .......... .......... .......... .......... .......... 67.5M
+   200K .......... .......... .......... .......... .......... 5.43M
+   250K .......... .......... .......... .......... .......... 65.4M
+   300K .......... .......... .......... .......... .......... 70.1M
+   350K .......... .......... .......... .......... .......... 67.5M
+   400K .......... .......... .......... .......... .......... 6.83M
+   450K .......... .......... .......... .......... .......... 64.4M
+   500K .......... .......... .......... .......... .......... 65.1M
+   550K .......... .......... .......... .......... .......... 71.3M
+   600K .......... .....                                       57.4M=0.05s
+
+2025-11-17 00:36:43 (11.9 MB/s) - ‘v21.0.1.tar.gz’ saved [630498]
+
+Setting compiler to /cvmfs/software.eessi.io/versions/2023.06/compat/linux/x86_64/usr/bin/gfortran
+ ------------------------------------------------------ 
+ Compiling packmol with /cvmfs/software.eessi.io/versions/2023.06/compat/linux/x86_64/usr/bin/gfortran 
+ Flags: -O3 -march=native -funroll-loops 
+ ------------------------------------------------------ 
+ ------------------------------------------------------ 
+ Packmol succesfully built.
+ ------------------------------------------------------ 
+
+################################################################################
+
+ PACKMOL - Packing optimization for the automated generation of
+ starting configurations for molecular dynamics simulations.
+ 
+                                                             Version 21.0.1 
+
+################################################################################
+
+  Packmol must be run with: packmol < inputfile.inp 
+
+  Userguide at: http://m3g.iqm.unicamp.br/packmol 
+
+  Reading input file... (Control-C aborts)
+  Types of coordinate files specified: xyz
+  Periodic boundary condition activated: 
+    Minimum coordinates:     0.00    0.00    0.00
+    Maximum coordinates:    10.00   10.00   10.00
+  Seed for random number generator:      1234567
+  Output file: solvated.xyz
+  Reading coordinate file: h3po4.xyz
+  Reading coordinate file: water.xyz
+  Number of independent structures:            2
+  The structures are: 
+  Structure            1 :Model[1]: Jmol 14.32.83  2023-01-07 08:24(           8  atoms)
+  Structure            2 :Properties=species:S:1:pos:R:3 pbc="F F F"(           3  atoms)
+  Maximum number of GENCAN loops for all molecule packing:          400
+  Distance tolerance:    1.5000000000000000     
+  Number of molecules of type            1 :            1
+  Number of molecules of type            2 :           30
+  Total number of restrictions:            2
+  Total number of atoms:           98
+  Molecule Model[1]: Jmol 14.32.83  2023-01-07 08:24(           1 ) will be fixed.
+  Total number of molecules:           31
+  Number of fixed molecules:            1
+  Number of free molecules:           30
+  Number of variables:          180
+  Total number of fixed atoms:            8
+  PBC on: Constraint automatically added to non-fixed atoms:
+  -> inside box     0.00    0.00    0.00   10.00   10.00   10.00
+  Updated total number of restrictions:            3
+  Maximum internal distance of type            1 :    1.5264780000000000     
+  All atoms must be within these coordinates: 
+   x: [   -1000.0000000000000      ,    1000.0000000000000       ] 
+   y: [   -999.20000000000005      ,    1000.8000000000000       ] 
+   z: [   -999.58331339637164      ,    1000.4166866036284       ] 
+  If the system is larger than this, increase the sidemax parameter. 
+
+################################################################################
+
+  Building initial approximation ... 
+
+################################################################################
+
+  Adjusting initial point to fit the constraints 
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
+  Molecules of type:            2
+
+  Packing:|0                                                        100%|
+          |***************
+
+  Restraint-only function value:    2.2673275569954692E-003
+  Maximum violation of the restraints:    2.2486546794857651E-003
+
+--------------------------------------------------------------------------------
+
+  Rescaling maximum and minimum coordinates... 
+  Mininum and maximum coordinates after constraint fitting: 
+   x: [    1.1809980425662341E-003 ,    10.033530990736077       ] 
+   y: [   -1.2051328472493872E-003 ,    10.000980106490893       ] 
+   z: [   -1.5774961717699562E-003 ,    10.000901254474291       ] 
+  Computing size of patches... 
+  Number of cells in each direction and cell sides: 
+   x:            6  cells of size    1.6666666666666667     
+   y:            6  cells of size    1.6666666666666667     
+   z:            6  cells of size    1.6666666666666667     
+  Cell-system length:   10.00000  10.00000  10.00000
+  Add fixed molecules to permanent arrays... 
+  Reseting center of mass... 
+
+--------------------------------------------------------------------------------
+
+  Setting initial trial coordinates ... 
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
+  Molecules of type:            2
+  Adjusting random positions to fit the constraints. 
+  Packing:|0                                                        100%|
+          |***
+  Restraint-only function value:    0.0000000000000000     
+  Maximum violation of the restraints:    0.0000000000000000     
+
+################################################################################
+
+  Objective function at initial point:    118.82019611926346     
+
+################################################################################
+
+  Packing molecules of type:            2
+
+################################################################################
+
+
+--------------------------------------------------------------------------------
+
+  Starting GENCAN loop:            0
+  Scaling radii by:    1.1000000000000001     
+
+  Packing:|0                                                        100%|
+          |************************
+
+  Function value from last GENCAN loop: f = .00000E+00
+  Best function value before: f = .11882E+03
+  Improvement from best function value:    99.99 %
+  Improvement from last loop:    99.99 %
+  Maximum violation of target distance:     0.000000
+  Maximum violation of the constraints: .00000E+00
+  Current structure written to file: solvated.xyz
+--------------------------------------------------------------------------------
+  Packing solved for molecules of type           2
+  Objective function value:    0.0000000000000000     
+  Maximum violation of target distance:    0.0000000000000000     
+  Max. constraint violation:    0.0000000000000000     
+--------------------------------------------------------------------------------
+
+################################################################################
+
+  Packing all molecules together 
+
+################################################################################
+
+
+  Initial approximation is a solution. Nothing to do. 
+
+  Solution written to file: solvated.xyz
+
+################################################################################
+
+                                 Success! 
+              Final objective function value: .67826E-10
+              Maximum violation of target distance:   0.000000
+              Maximum violation of the constraints: .00000E+00
+
+--------------------------------------------------------------------------------
+
+              Please cite this work if Packmol was useful: 
+
+           L. Martinez, R. Andrade, E. G. Birgin, J. M. Martinez, 
+         PACKMOL: A package for building initial configurations for
+                   molecular dynamics simulations. 
+        Journal of Computational Chemistry, 30(13) pp. 2157-2164, 2009.
+                  https://doi.org/10.1002/jcc.21224
+
+################################################################################
+
+   Running time:    1.38180032E-02  seconds. 
+
+--------------------------------------------------------------------------------
+
+
