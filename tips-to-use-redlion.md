@@ -147,14 +147,10 @@ Once desktop is ready, click terminal and follow corresponding instructions belo
 The course data is available at /course_data:
 
 ### 5.1. Ovito
-
-Ovito is installed at /custom_software_rocky/additional/ovito-basic-3.14.0-x86_64/bin/ovito
-
 ``` bash
-# run this to start ovito 
-ovito
-# or
-/custom_software_rocky/additional/ovito-basic-3.14.0-x86_64/bin/ovito
+To launch ovito, open a terminal on VNC:
+1. activate_biophy
+2. ovito 
 ```
 
 ### 5.2. Vesta 
