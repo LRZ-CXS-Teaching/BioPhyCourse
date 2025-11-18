@@ -1,5 +1,10 @@
 Notes for logging into the redlion cluster
+
+Create a common folder for a read-only mirror of github
+
 git clone https://github.com/LRZ-CXS-Teaching/BioPhyCourse
 ln -s /course_data/instant_share/BioPhyCourse ./BioPhyCourse
 cd /course_data/instant_share/BioPhyCourse
 git pull https://github.com/LRZ-CXS-Teaching/BioPhyCourse
+
+activate_biophy
