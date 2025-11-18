@@ -179,6 +179,11 @@ module load ImageMagick/7.1.1-34-GCCcore-13.2.0
 module load vmd
 # open vmd
 vmd 
+
+or 
+
+activate_biophy
+vmd
 ```
 
 ## 6. Jupyterlab on Redlion 
