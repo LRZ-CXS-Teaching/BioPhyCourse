@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH --nodes=1
-#SBATCH --ntasks=20
+#SBATCH --ntasks=4
 #SBATCH --cpus-per-task=4
 #SBATCH --job-name=cp2k-job
 #SBATCH --time=24:00:00
@@ -10,7 +10,7 @@
 #SBATCH --error=myjob_%j.err  # redirects stderror 
 cd $SLURM_SUBMIT_DIR
 export OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK
-export ASE_CP2K_COMMAND="mpirun -n 20 /custom_software_rocky/additional/cp2k/exe/local/cp2k_shell.psmp"
+export ASE_CP2K_COMMAND="mpirun -n 4 /custom_software_rocky/additional/cp2k/exe/local/cp2k_shell.psmp"
 export CP2K_DATA_DIR="/custom_software_rocky/additional/cp2k/data/"
 module purge
 module load miniforge3/25.9.1 
