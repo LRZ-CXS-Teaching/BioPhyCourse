@@ -12,13 +12,13 @@
 - 15:30 - 15:45 Plamen: Simulation Run
 
 ## Day 2
-- 09:00 - 09:45 Prasanth: VMD
-- 09:45 - 10:45 Plamen: Postprocessing and analysis
+- 09:00 - 10:00 Prasanth: VMD
+- 10:00 - 10:45 Prasanth: ASE - CP2K and QMMM Hands-on
 - 10:45 - 11:00 Break
-- 11:00 - 12:00 Prasanth: CP2K ASE and QMMM Hands-on
-- 12:00 - 13:00 Lunch
-- 13:00 - 14:00 Birkan: VESTA
-- 14:00 - 15:00 Birkan: DFTB+ Hands-on
+- 11:00 - 12:30 Prasanth QMMM Hands-on / Plamen: Postprocessing and analysis
+- 12:30 - 13:30 Lunch
+- 13:30 - 14:30 Birkan: VESTA
+- 14:30 - 15:30 Birkan: DFTB+ Hands-on
 - 15:00 - 15:15 Break
 - 15:15 - EOD Wrap-up
 
