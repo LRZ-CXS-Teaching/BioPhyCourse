@@ -1,0 +1,146 @@
+	&GENPOT
+          ATOMS HT CR
+	  FUNCTION 4*epsilon*((sigma/r)**12 - (sigma/r)**6)
+      	  PARAMETERS epsilon sigma
+	  UNITS kjmol nm
+      	  VALUES .2104514566 .2137710000
+      	  VARIABLES r
+          RCUT [angstrom] $CUTOFF
+      	&END GENPOT
+
+	&GENPOT
+          ATOMS HT HCMM
+	  FUNCTION 4*epsilon*((sigma/r)**12 - (sigma/r)**6)
+      	  PARAMETERS epsilon sigma
+	  UNITS kjmol nm
+      	  VALUES .1331011878 .1375990000
+      	  VARIABLES r
+          RCUT [angstrom] $CUTOFF
+      	&END GENPOT
+
+
+	&GENPOT
+          ATOMS HT HOCO
+	  FUNCTION 4*epsilon*((sigma/r)**12 - (sigma/r)**6)
+      	  PARAMETERS epsilon sigma
+	  UNITS kjmol nm
+      	  VALUES .1924639997 .0400010000
+      	  VARIABLES r
+          RCUT [angstrom] $CUTOFF
+      	&END GENPOT
+
+
+	&GENPOT
+          ATOMS HT HOR
+	  FUNCTION 4*epsilon*((sigma/r)**12 - (sigma/r)**6)
+      	  PARAMETERS epsilon sigma
+	  UNITS kjmol nm
+      	  VALUES .1924639997 .0400010000
+      	  VARIABLES r
+          RCUT [angstrom] $CUTOFF
+      	&END GENPOT
+
+	&GENPOT
+          ATOMS HT OR
+	  FUNCTION 4*epsilon*((sigma/r)**12 - (sigma/r)**6)
+      	  PARAMETERS epsilon sigma
+	  UNITS kjmol nm
+      	  VALUES .3499734205 .1776895000
+      	  VARIABLES r
+          RCUT [angstrom] $CUTOFF
+      	&END GENPOT
+
+	&GENPOT
+          ATOMS HT O2CM
+	  FUNCTION 4*epsilon*((sigma/r)**12 - (sigma/r)**6)
+      	  PARAMETERS epsilon sigma
+	  UNITS kjmol nm
+      	  VALUES .3108574031 .1714530000
+      	  VARIABLES r
+          RCUT [angstrom] $CUTOFF
+      	&END GENPOT
+
+	&GENPOT
+          ATOMS HT  PO4
+	  FUNCTION 4*epsilon*((sigma/r)**12 - (sigma/r)**6)
+      	  PARAMETERS epsilon sigma
+	  UNITS kjmol nm
+      	  VALUES .6863545620 .2115435000
+      	  VARIABLES r
+          RCUT [angstrom] $CUTOFF
+      	&END GENPOT
+
+
+
+
+	&GENPOT
+          ATOMS OT CR
+	  FUNCTION 4*epsilon*((sigma/r)**12 - (sigma/r)**6)
+      	  PARAMETERS epsilon sigma
+	  UNITS kjmol nm
+      	  VALUES .3826815207 .3512990000
+      	  VARIABLES r
+          RCUT [angstrom] $CUTOFF
+      	&END GENPOT
+
+	&GENPOT
+          ATOMS OT HCMM
+	  FUNCTION 4*epsilon*((sigma/r)**12 - (sigma/r)**6)
+      	  PARAMETERS epsilon sigma
+	  UNITS kjmol nm
+      	  VALUES .2420290447 .2751270000
+      	  VARIABLES r
+          RCUT [angstrom] $CUTOFF
+      	&END GENPOT
+
+
+	&GENPOT
+          ATOMS OT HOCO
+	  FUNCTION 4*epsilon*((sigma/r)**12 - (sigma/r)**6)
+      	  PARAMETERS epsilon sigma
+	  UNITS kjmol nm
+      	  VALUES .3499734205 .1775290000
+      	  VARIABLES r
+          RCUT [angstrom] $CUTOFF
+      	&END GENPOT
+
+
+	&GENPOT
+          ATOMS OT HOR
+	  FUNCTION 4*epsilon*((sigma/r)**12 - (sigma/r)**6)
+      	  PARAMETERS epsilon sigma
+	  UNITS kjmol nm
+      	  VALUES .3499734205 .1775290000
+      	  VARIABLES r
+          RCUT [angstrom] $CUTOFF
+      	&END GENPOT
+
+	&GENPOT
+          ATOMS OT OR
+	  FUNCTION 4*epsilon*((sigma/r)**12 - (sigma/r)**6)
+      	  PARAMETERS epsilon sigma
+	  UNITS kjmol nm
+      	  VALUES .6363859999 .3152175000
+      	  VARIABLES r
+          RCUT [angstrom] $CUTOFF
+      	&END GENPOT
+
+	&GENPOT
+          ATOMS OT O2CM
+	  FUNCTION 4*epsilon*((sigma/r)**12 - (sigma/r)**6)
+      	  PARAMETERS epsilon sigma
+	  UNITS kjmol nm
+      	  VALUES .5652580674 .3089810000
+      	  VARIABLES r
+          RCUT [angstrom] $CUTOFF
+      	&END GENPOT
+
+	&GENPOT
+          ATOMS OT PO4
+	  FUNCTION 4*epsilon*((sigma/r)**12 - (sigma/r)**6)
+      	  PARAMETERS epsilon sigma
+	  UNITS kjmol nm
+      	  VALUES 1.2480560199 .3490715000
+      	  VARIABLES r
+          RCUT [angstrom] $CUTOFF
+      	&END GENPOT

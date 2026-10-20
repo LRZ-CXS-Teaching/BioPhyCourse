@@ -1,0 +1,125 @@
+#-----------units nm----------------
+ @SET  CR_sigma 0.387541     
+ @SET  HCMM_sigma 0.235197   
+ @SET  HOCO_sigma 0.040001   
+ @SET  HOR_sigma 0.040001    
+ @SET  OR_sigma 0.315378     
+ @SET  O2CM_sigma 0.302905   
+ @SET  PO4_sigma 0.383086    
+ @SET  HOH_sigma 0.040001    
+ @SET  OH2_sigma 0.315057    
+#-----------units kjmol----------
+ @SET  CR_epsilon 0.230120   
+ @SET  HCMM_epsilon 0.092048 
+ @SET  HOCO_epsilon 0.192464 
+ @SET  HOR_epsilon 0.192464  
+ @SET  OR_epsilon 0.636386   
+ @SET  O2CM_epsilon 0.502080 
+ @SET  PO4_epsilon 2.447640  
+ @SET  HOH_epsilon 0.192464  
+ @SET  OH2_epsilon 0.636386  
+#---------units kcalmol-----------------
+ @SET  YA_epsilon 0.0000013298  
+ @SET  YO_epsilon 0.1554     
+ @SET  YS_epsilon 0.1554     
+ @SET  OT_epsilon 0.1554     
+# angstroms- sigma converted for LJ format in ck2p 
+ @SET  YA_sigma 4.2710913140
+ @SET  YO_sigma 3.1654342984
+ @SET  YS_sigma 3.1654342984
+ @SET  OT_sigma 3.1654342984
+#------ ---HT from swissparm--------------------
+ @SET CR_HT_epsilon      .2104514566   
+ @SET HCMM_HT_epsilon    .1331011878 
+ @SET HOCO_HT_epsilon    .1924639997 
+ @SET HOR_HT_epsilon     .1924639997  
+ @SET OR_HT_epsilon      .3499734205   
+ @SET O2CM_HT_epsilon    .3108574031 
+ @SET PO4_HT_epsilon     .6863545620  
+#-------------------------------------------- 
+ @SET CR_HT_sigma     .2137710000	    
+ @SET HCMM_HT_sigma   .1375990000	    
+ @SET HOCO_HT_sigma   .0400010000	    
+ @SET HOR_HT_sigma    .0400010000	    
+ @SET OR_HT_sigma     .1776895000	    
+ @SET O2CM_HT_sigma   .1714530000	    
+ @SET PO4_HT_sigma    .2115435000	    
+#--------------------OT from swissparm------- 
+ @SET CR_OT_epsilon      .3826815207   
+ @SET HCMM_OT_epsilon    .2420290447 
+ @SET HOCO_OT_epsilon    .3499734205 
+ @SET HOR_OT_epsilon     .3499734205  
+ @SET OR_OT_epsilon      .6363859999   
+ @SET O2CM_OT_epsilon    .5652580674 
+ @SET PO4_OT_epsilon     1.2480560199  
+#-------------------------------------------- 
+ @SET CR_OT_sigma     .3512990000	    
+ @SET HCMM_OT_sigma   .2751270000	    
+ @SET HOCO_OT_sigma   .1775290000	    
+ @SET HOR_OT_sigma    .1775290000	    
+ @SET OR_OT_sigma     .3152175000	    
+ @SET O2CM_OT_sigma   .3089810000	    
+ @SET PO4_OT_sigma    .3490715000	    
+#------------------------clayff----------------- 
+ @SET YA_YO_sigma  3.7182628062		    
+ @SET YA_YS_sigma  3.7182628062		    
+ @SET YA_OT_sigma  3.7182628062		    
+ @SET YO_YS_sigma  3.1654342984		    
+ @SET YO_OT_sigma  3.1654342984		    
+ @SET YS_OT_sigma  3.1654342984		    
+#-------------------------clayff-------------- 
+ @SET YA_YO_epsilon  .0004545327	    
+ @SET YA_YS_epsilon  .0004545327	    
+ @SET YA_OT_epsilon  .0004545327	    
+ @SET YO_YS_epsilon  .1554000000	    
+ @SET YO_OT_epsilon  .1554000000           
+ @SET YS_OT_epsilon  .1554000000           
+#------------------gp-diaspore----------- 
+ @SET CR_YA_epsilon     .0011315034    
+ @SET HCMM_YA_epsilon   .0007156116 	
+ @SET HOCO_YA_epsilon   .0010346980 	
+ @SET HOR_YA_epsilon    .0010346980  	
+ @SET OR_YA_epsilon     .0018816216   	
+ @SET O2CM_YA_epsilon   .0016712869 	
+ @SET PO4_YA_epsilon    .0036902574  	
+#---------------------------------------- 
+ @SET CR_YO_epsilon     .3868107433   	
+ @SET HCMM_YO_epsilon   .2446405943 	
+ @SET HOCO_YO_epsilon   .3537497151 	
+ @SET HOR_YO_epsilon    .3537497151  	
+ @SET OR_YO_epsilon     .6432527530   	
+ @SET O2CM_YO_epsilon   .5713573335 	
+ @SET PO4_YO_epsilon    1.2615228349  	
+#---------------------------------------- 
+ @SET CR_YS_epsilon     .3868107433   	
+ @SET HCMM_YS_epsilon   .2446405943 	
+ @SET HOCO_YS_epsilon   .3537497151 	
+ @SET HOR_YS_epsilon    .3537497151  	
+ @SET OR_YS_epsilon     .6432527530   	
+ @SET O2CM_YS_epsilon   .5713573335 	
+ @SET PO4_YS_epsilon    1.2615228349  	
+#---------------------------------------- 
+ @SET CR_YA_sigma	      .4073250657     	
+ @SET HCMM_YA_sigma     .3311530657   	
+ @SET HOCO_YA_sigma     .2335550657   	
+ @SET HOR_YA_sigma      .2335550657    	
+ @SET OR_YA_sigma	      .3712435657     	
+ @SET O2CM_YA_sigma     .3650070657   	
+ @SET PO4_YA_sigma      .4050975657    	
+#---------------------------------------- 
+ @SET CR_YO_sigma	      .3520422149     	
+ @SET HCMM_YO_sigma     .2758702149   	
+ @SET HOCO_YO_sigma     .1782722149   	
+ @SET HOR_YO_sigma      .1782722149    	
+ @SET OR_YO_sigma	      .3159607149     	
+ @SET O2CM_YO_sigma     .3097242149   	
+ @SET PO4_YO_sigma      .3498147149    	
+#---------------------------------------- 
+ @SET CR_YS_sigma	      .3520422149     	
+ @SET HCMM_YS_sigma     .2758702149   	
+ @SET HOCO_YS_sigma     .1782722149   	
+ @SET HOR_YS_sigma      .1782722149    	
+ @SET OR_YS_sigma	      .3159607149     	
+ @SET O2CM_YS_sigma     .3097242149   	
+ @SET PO4_YS_sigma      .3498147149     
+#---------------------------------------- 

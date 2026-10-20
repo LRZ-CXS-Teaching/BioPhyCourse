@@ -1,0 +1,76 @@
+	&LENNARD-JONES
+	  ATOMS YA YA
+	  EPSILON [kcalmol]   $YA_epsilon
+	  SIGMA [angstrom]    $YA_sigma
+	  RCUT  [angstrom]    $CUTOFF
+	&END LENNARD-JONES
+
+	&LENNARD-JONES
+	  ATOMS YO YO
+	  EPSILON [kcalmol]   $YO_epsilon
+	  SIGMA [angstrom]    $YO_sigma
+	  RCUT  [angstrom]    $CUTOFF
+	&END LENNARD-JONES
+
+	&LENNARD-JONES
+	  ATOMS YS YS
+	  EPSILON [kcalmol]   $YS_epsilon
+	  SIGMA [angstrom]    $YS_sigma
+	  RCUT  [angstrom]    $CUTOFF
+	&END LENNARD-JONES
+
+	&LENNARD-JONES
+	  ATOMS YA YO
+	  EPSILON [kcalmol]   $YA_YO_epsilon
+	  SIGMA [angstrom]    $YA_YO_sigma
+	  RCUT  [angstrom]    $CUTOFF
+	&END LENNARD-JONES
+
+	&LENNARD-JONES
+	  ATOMS YA YS
+	  EPSILON [kcalmol]   $YA_YS_epsilon
+	  SIGMA [angstrom]    $YA_YS_sigma
+	  RCUT  [angstrom]    $CUTOFF
+	&END LENNARD-JONES
+
+	&LENNARD-JONES
+	  ATOMS YO YS
+	  EPSILON [kcalmol]   $YO_YS_epsilon
+	  SIGMA [angstrom]    $YO_YS_sigma
+	  RCUT  [angstrom]    $CUTOFF
+	&END LENNARD-JONES
+
+	#water
+
+	&LENNARD-JONES
+	  ATOMS YA OT
+	  EPSILON [kcalmol]   $YA_OT_epsilon
+	  SIGMA [angstrom]    $YA_OT_sigma
+	  RCUT  [angstrom]    $CUTOFF
+	&END LENNARD-JONES
+
+
+	&LENNARD-JONES
+	  ATOMS YO OT
+	  EPSILON [kcalmol]   $YO_OT_epsilon
+	  SIGMA [angstrom]    $YO_OT_sigma
+	  RCUT  [angstrom]    $CUTOFF
+	&END LENNARD-JONES
+
+
+
+	&LENNARD-JONES
+	  ATOMS YS OT
+	  EPSILON [kcalmol]   $YS_OT_epsilon
+	  SIGMA [angstrom]    $YS_OT_sigma
+	  RCUT  [angstrom]    $CUTOFF
+	&END LENNARD-JONES
+	
+
+	&LENNARD-JONES
+	  ATOMS OT OT
+	  EPSILON [kcalmol]   $OT_epsilon
+	  SIGMA [angstrom]    $OT_sigma
+	  RCUT  [angstrom]    $CUTOFF
+	&END LENNARD-JONES
+

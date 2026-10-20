@@ -1,0 +1,175 @@
+&LENNARD-JONES
+  ATOMS CR HT
+  EPSILON [kjmol] $CR_HT_epsilon
+  SIGMA [nm]  $CR_HT_sigma
+  RCUT  [angstrom] $CUTOFF
+&END LENNARD-JONES
+
+
+&LENNARD-JONES
+  ATOMS HCMM HT
+  EPSILON [kjmol]  $HCMM_HT_epsilon
+  SIGMA [nm] $HCMM_HT_sigma
+  RCUT [angstrom] $CUTOFF
+&END LENNARD-JONES
+
+
+&LENNARD-JONES
+  ATOMS HOCO HT
+  EPSILON [kjmol]   $HOCO_HT_epsilon
+  SIGMA [nm]  $HOCO_HT_sigma
+  RCUT  [angstrom] $CUTOFF
+&END LENNARD-JONES
+
+
+&LENNARD-JONES
+  ATOMS HOR HT
+  EPSILON [kjmol]   $HOR_HT_epsilon
+  SIGMA [nm]  $HOR_HT_sigma
+  RCUT  [angstrom] $CUTOFF
+&END LENNARD-JONES
+
+
+&LENNARD-JONES
+  ATOMS OR HT
+  EPSILON [kjmol]  $OR_HT_epsilon
+  SIGMA [nm] $OR_HT_sigma
+  RCUT  [angstrom]    $CUTOFF
+&END LENNARD-JONES
+
+
+&LENNARD-JONES
+  ATOMS O2CM HT
+  EPSILON [kjmol]  $O2CM_HT_epsilon
+  SIGMA [nm] $O2CM_HT_sigma
+  RCUT  [angstrom]    $CUTOFF
+&END LENNARD-JONES
+
+
+&LENNARD-JONES
+  ATOMS PO4 HT
+  EPSILON [kjmol]  $PO4_HT_epsilon
+  SIGMA [nm] $PO4_HT_sigma
+  RCUT  [angstrom]    $CUTOFF
+&END LENNARD-JONES
+
+
+
+&LENNARD-JONES
+  ATOMS CR OT
+  EPSILON [kjmol]   $CR_OT_epsilon
+  SIGMA [nm]  $CR_OT_sigma
+  RCUT  [angstrom] $CUTOFF
+&END LENNARD-JONES
+
+
+&LENNARD-JONES
+  ATOMS HCMM OT
+  EPSILON [kjmol]  $HCMM_OT_epsilon
+  SIGMA [nm] $HCMM_OT_sigma
+  RCUT  [angstrom]    $CUTOFF
+&END LENNARD-JONES
+
+
+&LENNARD-JONES
+  ATOMS HOCO OT
+  EPSILON [kjmol]   $HOCO_OT_epsilon
+  SIGMA [nm]  $HOCO_OT_sigma
+  RCUT  [angstrom] $CUTOFF
+&END LENNARD-JONES
+
+
+&LENNARD-JONES
+  ATOMS HOR OT
+  EPSILON [kjmol]   $HOR_OT_epsilon
+  SIGMA [nm]  $HOR_OT_sigma
+  RCUT  [angstrom] $CUTOFF
+&END LENNARD-JONES
+
+
+&LENNARD-JONES
+  ATOMS OR OT
+  EPSILON [kjmol]  $OR_OT_epsilon
+  SIGMA [nm] $OR_OT_sigma
+  RCUT  [angstrom]    $CUTOFF
+&END LENNARD-JONES
+
+
+&LENNARD-JONES
+  ATOMS O2CM OT
+  EPSILON [kjmol]  $O2CM_OT_epsilon
+  SIGMA [nm] $O2CM_OT_sigma
+  RCUT  [angstrom]    $CUTOFF
+&END LENNARD-JONES
+
+
+&LENNARD-JONES
+  ATOMS PO4 OT
+  EPSILON [kjmol]  $PO4_OT_epsilon
+  SIGMA [nm] $PO4_OT_sigma
+  RCUT  [angstrom]    $CUTOFF
+&END LENNARD-JONES
+
+
+&LENNARD-JONES
+  ATOMS CR CR
+  EPSILON [kjmol]  $CR_epsilon
+  SIGMA [nm] $CR_sigma
+  RCUT  [angstrom]    $CUTOFF
+&END LENNARD-JONES
+
+
+&LENNARD-JONES
+  ATOMS HCMM HCMM
+  EPSILON [kjmol]  $HCMM_epsilon
+  SIGMA [nm] $HCMM_sigma
+  RCUT  [angstrom]    $CUTOFF
+&END LENNARD-JONES
+
+
+&LENNARD-JONES
+  ATOMS HOCO HOCO
+  EPSILON [kjmol]  $HOCO_epsilon
+  SIGMA [nm] $HOCO_sigma
+  RCUT  [angstrom]    $CUTOFF
+&END LENNARD-JONES
+
+
+&LENNARD-JONES
+  ATOMS HOR HOR
+  EPSILON [kjmol]  $HOR_epsilon
+  SIGMA [nm] $HOR_sigma
+  RCUT  [angstrom]    $CUTOFF
+&END LENNARD-JONES
+
+
+&LENNARD-JONES
+  ATOMS OR OR
+  EPSILON [kjmol]  $OR_epsilon
+  SIGMA [nm] $OR_sigma
+  RCUT  [angstrom]    $CUTOFF
+&END LENNARD-JONES
+
+
+&LENNARD-JONES
+  ATOMS O2CM O2CM
+  EPSILON [kjmol]  $O2CM_epsilon
+  SIGMA [nm] $O2CM_sigma
+  RCUT  [angstrom]    $CUTOFF
+&END LENNARD-JONES
+
+
+&LENNARD-JONES
+  ATOMS PO4 PO4
+  EPSILON [kjmol]  $PO4_epsilon
+  SIGMA [nm] $PO4_sigma
+  RCUT  [angstrom]    $CUTOFF
+&END LENNARD-JONES
+#-----------------------------------------------------------------------------#
+
+
+
+
+
+
+

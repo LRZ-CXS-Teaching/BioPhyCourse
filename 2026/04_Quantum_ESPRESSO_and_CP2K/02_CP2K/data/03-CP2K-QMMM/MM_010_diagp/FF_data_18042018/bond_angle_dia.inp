@@ -1,0 +1,30 @@
+      &CHARGE
+      	ATOM YH
+      	CHARGE 0.4250
+      &END CHARGE
+      &CHARGE
+      	ATOM YO
+	CHARGE -1.0500
+      &END CHARGE
+      &CHARGE
+      	ATOM YS
+      	CHARGE -0.9500
+      &END CHARGE
+      &CHARGE
+      	ATOM YA
+      	CHARGE 1.5750
+      &END CHARGE
+
+      &BOND
+      	ATOMS YH YS
+      	KIND HARMONIC
+	K [kcalmol*angstrom^-2] 554.1349*2
+      	R0 [angstrom] 1.00
+      &END BOND
+
+      &BEND
+      	ATOMS YA YS YH
+      	KIND HARMONIC
+	K [kcalmol*rad^-2] 30*2
+      	THETA0 [deg] 109.47
+      &END BEND

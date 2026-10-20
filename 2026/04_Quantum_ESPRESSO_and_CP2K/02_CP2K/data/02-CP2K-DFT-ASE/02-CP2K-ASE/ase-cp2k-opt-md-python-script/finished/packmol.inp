@@ -1,0 +1,16 @@
+
+tolerance 1.5
+filetype xyz
+output solvated.xyz
+pbc 10 10 10 
+
+structure h3po4.xyz
+  number 1
+  center
+  fixed 5. 5. 5. 0. 0. 0. # fix h3po4 at center
+end structure
+
+structure water.xyz
+  number 30 # based on 1gm/cm3
+  inside box 0. 0. 0. 10. 10. 10. 
+end structure
